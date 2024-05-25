@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Projects</title>
+        <link rel="icon" href="favicon.png" type="image/png">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <style>
+            /* Styling for mobile menu */
+            #mobile-menu {
+                transition: max-height 0.3s ease-in-out;
+            }
+            /* Styling for portfolio images */
+            .portfolio-image {
+                transition: filter 0.3s ease;
+            }
+            .portfolio-image:hover {
+                filter: brightness(0.9); /* Reduce brightness to make the image slightly darker */
+            }
+        </style>
+    </head>
+    <body class="bg-white text-black font-sans">
+        <!-- Header section -->
+        <header class="flex justify-between items-center py-2 px-8 mt-1">
+            <div class="flex items-center space-x-6">
+                <!-- Name -->
+                <a href="index.html" class="font-bold text-xl">Sutton</a>
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex space-x-6 text-lg">
+                    <a href="code-projects.html" class="hover:underline">
+                        Code
+                        Projects
+                    </a>
+                </nav>
+            </div>
+            <!-- Secondary Navigation -->
+            <div class="flex items-center space-x-6">
+                <!-- Search Bar -->
+                <div class="relative hidden lg:block">
+                    <input type="text" placeholder="Search" class="border rounded-full py-1 pl-10 pr-3 focus:outline-none focus:border-gray-500">
+                    <img src="search-icon.png" alt="Search Icon" class="absolute left-4 top-3 h-3 w-3">
+                </div>
+                <!-- Other Links -->
+                <a href="https://github.com/sutton-sn" target="_blank" class="hidden md:block hover:underline text-lg">GitHub</a>
+                <a href="curriculum.pdf" target="_blank" class="bg-black text-white py-2 px-4 font-bold rounded-full hover:bg-gray-800 hidden md:block">Curriculum</a>
+                <!-- Mobile Menu Toggle Button -->
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                        ></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <!-- Mobile Menu -->
+        <div class="md:hidden" id="mobile-menu" style="display: none;">
+            <nav class="px-8 pt-2 pb-4 space-y-1">
+                <a href="code-projects.html" class="block text-lg font-bold hover:underline">
+                    Code
+                    Projects
+                </a>
+                <a href="https://github.com/sutton-sn" target="_blank" class="block text-lg font-bold hover:underline">GitHub</a>
+                <a href="curriculum.pdf" target="_blank" class="block text-lg font-bold hover:underline">Curriculum</a>
+            </nav>
+        </div>
+        <!-- Home Section -->
+        <main class="px-8 py-4">
+            <!-- Portfolio Section -->
+            <section id="projects" class="text-center">
+                <h2 class="text-4xl font-bold">Code projects</h2>
+                <h2 class="text-lg mb-6 py-2">
+                    Discover my code projects with
+                    HTML, CSS, JS, SQL and Python
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="text-left">
+                        <a href="https://github.com/sutton-sn/new-game-concept?tab=readme-ov-file" target="_blank">
+                            <img src="project1.png" alt="Project 1" class="portfolio-image mx-auto mb-4 rounded-md">
+                        </a>
+                        <p class="text-lg font-medium">
+                            Development of a Game Concept 
+                            Based on User Research.
+                        </p>
+                        <p class="text-m">
+                            User data analyzed in Python and sorted with SQL
+                        </p>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="text-left">
+                        <a href="https://github.com/sutton-sn/ai-price-prediction" target="_blank">
+                            <img src="project2.png" alt="Project 2" class="portfolio-image mx-auto mb-4 rounded-md">
+                        </a>
+                        <p class="text-lg font-medium">BTC price prediction with neural networks.</p>
+                        <p class="text-m">
+                            Neural networks and price analyzed with Python, 
+                            Pandas, Matplotlib, Numpy and TensorFlow.
+                        </p>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="text-left">
+                        <a href="https://github.com/sutton-sn/algorithmic-web-scraper" target="_blank">
+                            <img src="project3.png" alt="Project 3" class="portfolio-image mx-auto mb-4 rounded-md">
+                        </a>
+                        <p class="text-lg font-medium">
+                            Algorithmic web scraper.
+                        </p>
+                        <p class="text-m">
+                            Web Scraper with Requests, BeautifulSoup, Pandas 
+                            and ttkbootstrap to classify content into topics.
+                        </p>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="text-left">
+                        <a href="https://github.com/sutton-sn/analysis-of-space-missions" target="_blank">
+                            <img src="project4.png" alt="Project 4" class="portfolio-image mx-auto mb-4 rounded-md">
+                        </a>
+                        <p class="text-lg font-medium">Analysis of space missions</p>
+                        <p class="text-m">
+                            Rocket launch data analyzed with 
+                            python and pandas library.
+                        </p>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="text-left">
+                        <a href="project5.html" target="_blank">
+                            <img src="project5.png" alt="Project 5" class="portfolio-image mx-auto mb-4 rounded-md">
+                        </a>
+                        <p class="text-lg font-medium">Example</p>
+                        <p class="text-m">
+                            Example.
+                        </p>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="text-left">
+                        <a href="https://github.com/sutton-sn/astro-quest-game" target="_blank">
+                            <img src="project6.png" alt="Project 6" class="portfolio-image mx-auto mb-4 rounded-md">
+                        </a>
+                        <p class="text-lg font-medium">Astro quest game</p>
+                        <p class="text-m">
+                            Mini space game made with python, 
+                            pygame, random and math.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer Section -->
+        <footer class="bg-white text-black py-4">
+            <div class="container mx-auto px-8 flex justify-between items-center text-m">
+                <p>Made by Sutton</p>
+                <p>mail.sutton.su@gmail.com</p>
+            </div>
+        </footer>
+        <!-- JavaScript for Smooth Scroll and Mobile Menu Toggle -->
+        <script>
+            // Mobile Menu Toggle
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+                var menu = document.getElementById('mobile-menu');
+                if (menu.style.display === 'none' || menu.style.display === '') {
+                    menu.style.display = 'block';
+                } else {
+                    menu.style.display = 'none';
+                }
+            });
+
+            // Smooth Scroll Function
+            function smoothScroll(targetId) {
+                const targetElement = document.getElementById(targetId);
+                const topOfElement = targetElement.offsetTop;
+
+                window.scroll({
+                    top: topOfElement,
+                    behavior: "smooth"
+                });
+            }
+
+            // Add event listeners to smooth scroll links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    smoothScroll(targetId);
+                });
+            });
+        </script>
+    </body>
+</html>

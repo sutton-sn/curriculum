@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Character set for the document -->
+        <meta charset="UTF-8">
+        <!-- Responsive design settings -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of the webpage -->
+        <title>Links</title>
+        <!-- Favicon for the webpage -->
+        <link rel="icon" href="favicon.png" type="image/png">
+        <!-- Tailwind CSS integration -->
+        <style>
+            @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+            
+            /* Custom styles for link buttons */
+            .link-button {
+                transition: background-color 0.3s ease, color 0.3s ease;
+                padding: 0.5rem 1rem;
+            }
+        </style>
+    </head>
+    <body class="bg-gray-100 flex flex-col justify-center items-center min-h-screen py-6">
+        <!-- Profile image -->
+        <img src="scrachi.png" alt="Avatar" class="rounded-full w-32 h-32">
+        <!-- Main heading -->
+        <h1 class="text-2xl font-semibold mb-1">Sutton</h1>
+        <!-- Subtitle -->
+        <p class="text-gray-600 mb-4">My link center</p>
+        <!-- Container for links -->
+        <div class="w-full max-w-xs px-4 sm:px-0 text-m">
+            <!-- Link 1 -->
+            <a href="code-projects.html" class="link-button block w-full bg-white text-black text-center py-2 rounded-full mb-2 hover:bg-gray-900 hover:text-white">
+                Code projects
+            </a>
+            <!-- Link 2 -->
+            <a href="https://github.com/sutton-sn" target="_blank" class="link-button block w-full bg-white text-black text-center py-2 rounded-full mb-2 hover:bg-gray-900 hover:text-white">
+                Github
+            </a>
+            <!-- Link 3 -->
+            <a href="about-me.pdf" target="_blank" class="link-button block w-full bg-white text-black text-center py-2 rounded-full mb-2 hover:bg-gray-900 hover:text-white">
+                About me
+            </a>
+            <!-- Link 4 -->
+            <a href="curriculum.pdf" target="_blank" class="link-button block w-full bg-white text-black text-center py-2 rounded-full mb-2 hover:bg-gray-900 hover:text-white">
+                Curriculum
+            </a>
+        </div>
+        <!-- Footer section -->
+        <footer class="mt-4">
+            <div class="bg-gray-200 text-gray-700 text-xs rounded-full py-1 px-3 text-center">
+                Made by Sutton
+            </div>
+        </footer>
+    </body>
+</html>
